@@ -12,8 +12,8 @@
 typedef double real_type;
 typedef std::complex<real_type> complex_type;
 
-//#ifndef __USE_SQUARE_BRACKETS_FOR_ELEMENT_ACCESS_OPERATOR
-//#define __USE_SQUARE_BRACKETS_FOR_ELEMENT_ACCESS_OPERATOR
-//#endif
+#ifndef __USE_SQUARE_BRACKETS_FOR_ELEMENT_ACCESS_OPERATOR
+#define __USE_SQUARE_BRACKETS_FOR_ELEMENT_ACCESS_OPERATOR
+#endif
 
 #endif // __SIMPLE_FFT__FFT_SETTINGS_H__

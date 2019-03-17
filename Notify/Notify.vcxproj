@@ -106,7 +106,7 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\eigen\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Shreyansh Darshan\Documents\GitHub\Notify\Notify\simple_fft;C:\eigen\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -154,6 +154,13 @@
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="render.h" />
+    <ClInclude Include="simple_fft\check_fft.hpp" />
+    <ClInclude Include="simple_fft\copy_array.hpp" />
+    <ClInclude Include="simple_fft\error_handling.hpp" />
+    <ClInclude Include="simple_fft\fft.h" />
+    <ClInclude Include="simple_fft\fft.hpp" />
+    <ClInclude Include="simple_fft\fft_impl.hpp" />
+    <ClInclude Include="simple_fft\fft_settings.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Notify.cpp" />
