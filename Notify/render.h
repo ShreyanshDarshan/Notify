@@ -96,6 +96,22 @@ void draw_circle_solid(int x, int y, double R,  unsigned char rc, unsigned char 
 	}
 }
 
+void draw_rect_hollow(int x1, int y1, int x2, int y2, unsigned char rc, unsigned char g, unsigned char b)
+{	
+	draw_path(x1, y1, x1, y2, rc, g, b);
+	draw_path(x1, y1, x2, y1, rc, g, b);
+	draw_path(x2, y1, x2, y2, rc, g, b);
+	draw_path(x1, y2, x2, y2, rc, g, b);
+}
+
+void draw_rect_solid(int x1, int y1, int x2, int y2, unsigned char rc, unsigned char g, unsigned char b)
+{
+	for (int i = x1; i < x2; i++)
+	{
+		draw_path(i, y1, i, y2, rc, g, b);
+	}
+}
+
 void clear()
 {
 	memset(pBuffer, 0, length*height*3);
